@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product overview</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="breadcrum">
+            <div class="breadcrum-img"><img src="images/breadcrum-bg.jpg" alt=""></div>
+            <div class="col-lg-12 text-center">
+                <div class="breadcrum-content">
+                    <strong>Shop</strong>
+                    <ul>
+                        <li><a href="#">Home</a><span>Shop</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="product-blk">
+            <div class="container">
+                <div class="row">
+                    <div class="lft">
+                        <div class="filter-mob"><strong>Filter</strong><button><img src="images/filter-brg.svg" alt=""></button></div>
+                        <div class="sidebar">
+                            <button class="hide">×</button>
+                            <div class="sidebar-item">
+                                <h1>Category</h1>
+                                <ul>
+                                    <li><a href="#">Fresh Meat</a></li>
+                                    <li><a href="#">Vegetables</a></li>
+                                    <li><a href="#">Fruit & Nut Gifts</a></li>
+                                    <li><a href="#">Fresh Berries</a></li>
+                                    <li><a href="#">Ocean Foods</a></li>
+                                    <li><a href="#">Butter & Eggs</a></li>
+                                    <li><a href="#">Fastfood</a></li>
+                                    <li><a href="#">Fresh Onion</a></li>
+                                    <li><a href="#">Papayaya & Crisps</a></li>
+                                    <li><a href="#">Oatmeal</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-item">
+                                <h2>Price</h2>
+                                <div class="price-range-wrap">
+                                    <div class="price-range" data-min="10" data-max="540"></div>
+                                    <div class="price-input"><input type="text" id="minamount"><input type="text"
+                                            id="maxamount"></div>
+                                </div>
+                            </div>
+                            <div class="sidebar-item color-blk">
+                                <h3>Colors</h3>
+                                <label for="red" name="color"><input type="radio" id="red"
+                                        name="color"><span>Red</span></label>
+                                <label for="Brown" name="color"><input type="radio" id="Brown"
+                                        name="color"><span>Brown</span></label>
+                                <label for="Crimson" name="color"><input type="radio" id="Crimson"
+                                        name="color"><span>Crimson</span></label>
+                                <label for="Gold" name="color"><input type="radio" id="Gold"
+                                        name="color"><span>Gold</span></label>
+                                <label for="Olive" name="color"><input type="radio" id="Olive"
+                                        name="color"><span>Olive</span></label>
+                                <label for="Blue" name="color"><input type="radio" id="Blue"
+                                        name="color"><span>Blue</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ryt">
+                        <div class="sort-blk">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-2 col-sm-3">
+                                    <div class="filter-button">
+                                        <button class="grid active">
+                                            <img src="images/grid.svg" alt="grid">
+                                            <img src="images/grid-active.svg" alt="grid">
+                                        </button>
+                                        <button class="list">
+                                            <img src="images/list.svg" alt="list">
+                                            <img src="images/list-active.svg" alt="list">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-7 col-sm-7">
+                                    <div class="filter-sort"><span>Sort By</span>
+                                        <select>
+                                            <option value="Low to High">Low to High</option>
+                                            <option value="High to Low">High to Low</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prdov-blk grid-view" id="product-grid">
+    
+                        </div>
+                        <div id="loader"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="toast-container"></div>
+        <div class="scroll-to-top" id="scroll-to-top">↑</div>
+    </main>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
